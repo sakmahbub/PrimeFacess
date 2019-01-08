@@ -47,5 +47,11 @@ public class AutoComplate {
         this.email = email;
     }
     
+    public void save(){
+        
+        System.out.println("ID: "+ id);
+        System.out.println("Name : " + name);
+        System.out.println("Email : " + email);
+    }
     
 }

@@ -7,21 +7,28 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        <h:form>
-            <p:panelGrid columns="2">
-                <p:outputLabel value="ID: " for="acID"/>
-                <p:autoComplete id="acID" value="#{autoComplate.id}"  completeMethod="#{autoComplate.completeText}"/>
-                
-                <p:outputLabel value="Name: " for="acName"/>
-                <p:autoComplete id="acName" value="#{autoComplate.name}" completeMethod="#{autoComplate.completeText}"/>
-                
-                
-                <p:outputLabel value="Email: " for="acEmail"/>
-                <p:autoComplete id="acEmail" value="#{autoComplate.email}" completeMethod="#{autoComplate.completeText}"/>
-                
-            </p:panelGrid>
+        <p:panel>
+            <h:form>
+
+                <p:panelGrid columns="2">
+                    <p:outputLabel value="ID: " for="acID"/>
+                    <p:autoComplete id="acID" value="#{autoComplate.id}"  completeMethod="#{autoComplate.completeText}"/>
+
+                    <p:outputLabel value="Name: " for="acName"/>
+                    <p:autoComplete id="acName" value="#{autoComplate.name}" completeMethod="#{autoComplate.completeText}"/>
+
+
+                    <p:outputLabel value="Email: " for="acEmail"/>
+                    <p:autoComplete id="acEmail" value="#{autoComplate.email}" completeMethod="#{autoComplate.completeText}"/>
+                </p:panelGrid>
+
+            </h:form>
             
-        </h:form>
+            <p:commandButton  action="#{autoComplate.save()}" value="Submit"></p:commandButton>
+            <p:commandButton  action="index.xhtml" value="Home page"></p:commandButton>
+            <p:commandButton  action="calender.xhtml" value="Birth date page"></p:commandButton>
+            
+        </p:panel>
     </h:body>
 </html>
 
