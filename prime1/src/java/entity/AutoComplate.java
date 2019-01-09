@@ -52,6 +52,7 @@ public class AutoComplate {
         System.out.println("ID: "+ id);
         System.out.println("Name : " + name);
         System.out.println("Email : " + email);
+        
     }
     
 }

@@ -23,12 +23,23 @@
                 </p:panelGrid>
 
             </h:form>
-            
+
             <p:commandButton  action="#{autoComplate.save()}" value="Submit"></p:commandButton>
             <p:commandButton  action="index.xhtml" value="Home page"></p:commandButton>
             <p:commandButton  action="calender.xhtml" value="Birth date page"></p:commandButton>
-            
+
         </p:panel>
+
+
+        <h:form>
+            <p:panelGrid columns="2">
+                <p:outputLabel value="Maggage: " for="msg"/>
+                <p:inputTextarea id="msg" value="#{inputTextAreaBean.msg}" rows="1" cols="20" />
+                
+
+            </p:panelGrid>
+            <p:commandButton  action="#{inputTextAreaBean.save()}" value="Msg Send"></p:commandButton>
+        </h:form>
     </h:body>
 </html>
 
